@@ -5,3 +5,11 @@
 // use chipper's gruntfile
 module.exports = require( '../chipper/js/grunt/Gruntfile.js' );
 grunt.loadNpmTasks('grunt-gh-pages');
+grunt.initConfig({
+  'gh-pages': {
+      options:{
+        add: true
+    }.
+    src: **/*
+  }
+});
