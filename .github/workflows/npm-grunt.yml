@@ -24,6 +24,7 @@ jobs:
 
     - name: Build
       run: |
+        npm install gh-pages-deploy -g
         git init
         git clone https://github.com/phetsims/assert.git
         git clone https://github.com/phetsims/axon.git
@@ -53,3 +54,5 @@ jobs:
         npm install
         cd ../charges-and-fields
         npm install
+        cd ..
+        gh-pages-deploy
